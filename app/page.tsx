@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/SkillsCard";
+import Projects from "@/components/ProjectsCard";
 
 export default function Home() {
   return (
@@ -35,6 +36,25 @@ export default function Home() {
           </h2>
         </div>
         <Skills />
+      </section>
+
+      <section
+        id="projects"
+        className="py-16 md:py-24 max-w-300 mx-auto px-4 md:px-8 relative z-10"
+      >
+        <div className="space-y-2 mb-10">
+          <span className="font-mono text-xs sm:text-sm text-[#4cd7f6] font-semibold tracking-wider uppercase">
+            // 03. FEATURED WORK
+          </span>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#dfe2ee] tracking-tight">
+            Crafted with Code & Care
+          </h2>
+          <p className="font-sans text-xs sm:text-sm text-[#8e9ca0]">
+            A selection of projects exploring web performance, algorithms, and
+            applied machine learning.
+          </p>
+        </div>
+        <Projects />
       </section>
     </div>
   );
